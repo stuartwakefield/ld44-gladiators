@@ -24,7 +24,7 @@ public class PlayerControl : MonoBehaviour
         Vector2 direction = new Vector2(horizontal, vertical);
         Vector2 clamped = Vector2.ClampMagnitude(direction, 1);
         Vector2 update = clamped * moveSpeed * Time.deltaTime;
-        Vector3 position = parent.transform.position + new Vector3(update.x, update.y, transform.position.z);
+        Vector3 position = parent.transform.position + new Vector3(update.x, update.y, parent.transform.position.z);
         if (ground.HasTile(ground.WorldToCell(position)))
         {
             parent.transform.position = position;

@@ -10,19 +10,29 @@ public class Damage : MonoBehaviour
     public float health = 100.0f;
 
     private bool dead = false;
+    private float currentHealth;
+
+    public void Start()
+    {
+        currentHealth = health;
+    }
+
+    public float HealthFraction()
+    {
+        return currentHealth / health;
+    }
 
     public void SustainDamage(float amount)
     {
         if (!dead)
         {
-            health = Mathf.Max(health - amount, 0.0f);
-            if (health == 0.0f)
+            currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
+            if (currentHealth == 0.0f)
             {
                 dead = true;
                 animator.SetTrigger("Dead");
                 Destroy(target);
             }
         }
-        
     }
 }

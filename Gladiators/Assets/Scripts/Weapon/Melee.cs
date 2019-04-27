@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Melee : MonoBehaviour
 {
-    public float attackRange = 1.0f;
     public float attackRate = 1.0f;
     public float attackDamage = 10.0f;
 
@@ -36,11 +35,19 @@ public class Melee : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        attackTargets.Add(collision.attachedRigidbody.gameObject);
+        Damage damage = collision.gameObject.GetComponent<Damage>();
+        if (damage)
+        {
+            attackTargets.Add(collision.gameObject);
+        }
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        attackTargets.Remove(collision.attachedRigidbody.gameObject);
+        Damage damage = collision.gameObject.GetComponent<Damage>();
+        if (damage)
+        {
+            attackTargets.Remove(collision.gameObject);
+        }
     }
 }
