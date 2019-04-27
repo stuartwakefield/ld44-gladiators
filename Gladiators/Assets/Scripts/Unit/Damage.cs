@@ -6,6 +6,7 @@ public class Damage : MonoBehaviour
 {
     public Animator animator;
     public GameObject target;
+    public Rigidbody2D body;
 
     public float health = 100.0f;
 
@@ -22,11 +23,12 @@ public class Damage : MonoBehaviour
         return currentHealth / health;
     }
 
-    public void SustainDamage(float amount)
+    public void SustainDamage(float amount, Vector2 direction)
     {
         if (!dead)
         {
             currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
+            body.AddForce(amount * direction);
             if (currentHealth == 0.0f)
             {
                 dead = true;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Melee : MonoBehaviour
 {
+    public GameObject parent;
+
     public float attackRate = 1.0f;
     public float attackDamage = 10.0f;
 
@@ -29,7 +31,7 @@ public class Melee : MonoBehaviour
         foreach (GameObject attackTarget in attackTargets)
         {
             Damage damage = attackTarget.GetComponent<Damage>();
-            damage.SustainDamage(attackDamage);
+            damage.SustainDamage(attackDamage, (attackTarget.transform.position - parent.transform.position).normalized);
         }
     }
 

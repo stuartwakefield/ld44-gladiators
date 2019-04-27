@@ -14,10 +14,17 @@ public class PlayerPickupItem : MonoBehaviour
         if (item)
         {
             item.gameObject.SetActive(false);
+
+            // Specific to weapon
             defaultWeapon.SetActive(false);
             item.parent.transform.parent = parent.transform;
+
+            // Local position will be specific to each weapon
             item.parent.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
             item.equipped.SetActive(true);
+
+            // Specific to melee
+            item.equipped.GetComponent<Melee>().parent = parent;
             control.weapon = item.equipped.GetComponent<Melee>();
         }
     }
