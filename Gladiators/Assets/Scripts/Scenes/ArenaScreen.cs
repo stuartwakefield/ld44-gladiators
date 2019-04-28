@@ -7,7 +7,6 @@ public class ArenaScreen : MonoBehaviour
 {
     public void OnNext()
     {
-        Debug.Log("Next");
         SceneManager.LoadScene("Gladiator", LoadSceneMode.Single);
     }
 }

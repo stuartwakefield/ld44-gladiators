@@ -12,6 +12,7 @@ public class Damage : MonoBehaviour
     public Rigidbody2D body;
 
     public float health = 100.0f;
+    public int team = 0;
 
     private bool dead = false;
     private float currentHealth;
@@ -35,7 +36,7 @@ public class Damage : MonoBehaviour
             if (currentHealth == 0.0f)
             {
                 dead = true;
-                animator.SetTrigger("Dead");
+                animator.SetBool("Dead", true);
                 Destroy(target);
                 if (onDead != null)
                 {
@@ -43,5 +44,21 @@ public class Damage : MonoBehaviour
                 }
             }
         }
+    }
+
+    public bool IsFoe(GameObject target)
+    {
+        Damage damage = target.GetComponent<Damage>();
+        return damage && !damage.IsAllyWithTeam(team);
+    }
+
+    public bool IsAllyWithTeam(int team)
+    {
+        return this.team == team;
+    }
+
+    public bool IsDead()
+    {
+        return dead;
     }
 }
