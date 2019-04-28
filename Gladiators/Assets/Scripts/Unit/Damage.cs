@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Damage : MonoBehaviour
 {
+    public UnityEvent onDead;
+
     public Animator animator;
     public GameObject target;
     public Rigidbody2D body;
@@ -34,6 +37,10 @@ public class Damage : MonoBehaviour
                 dead = true;
                 animator.SetTrigger("Dead");
                 Destroy(target);
+                if (onDead != null)
+                {
+                    onDead.Invoke();
+                }
             }
         }
     }

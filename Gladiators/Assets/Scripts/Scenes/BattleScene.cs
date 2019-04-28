@@ -1,16 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleScene : MonoBehaviour
 {
-    void OnPlayerDead()
+    public Animator animator;
+    public PlayerInfoManager manager;
+    public float wait = 5.0f;
+
+    private float start = 0.0f;
+    private bool death = false;
+    private bool victory = false;
+
+    public void Start()
     {
-        Debug.Log("Death!");
+        manager.OnBattleStart();
     }
 
-    void OnEnemyDead()
+    public void OnDeath()
     {
-        Debug.Log("Victory!");
+        start = Time.time;
+        death = true;
+        animator.SetTrigger("Death");
+        manager.OnDeath();
+    }
+
+    public void OnVictory()
+    {
+        start = Time.time;
+        victory = true;
+        animator.SetTrigger("Victory");
+        manager.OnVictory();
+    }
+
+    public void Update()
+    {
+        if (death && Time.time > start + wait)
+        {
+            SceneManager.LoadScene("Start", LoadSceneMode.Single);
+        }
+        else if (victory && Time.time > start + wait)
+        {
+            SceneManager.LoadScene("Arena", LoadSceneMode.Single);
+        }
     }
 }

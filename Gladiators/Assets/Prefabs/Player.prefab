@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 2722510618892867759}
   - component: {fileID: 2722510618892867754}
   - component: {fileID: 2722510618892867757}
+  - component: {fileID: 773113502737009119}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -168,10 +169,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f871a023a6b4eb94ba24b360e47d7698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDead:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 773113502737009119}
+        m_MethodName: OnPlayerDead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   animator: {fileID: 2722510617980864244}
   target: {fileID: 2722510619799556766}
   body: {fileID: 2722510618892867754}
   health: 100
+--- !u!114 &773113502737009119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2722510618892867758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battle: {fileID: 0}
 --- !u!1 &2722510619799556766
 GameObject:
   m_ObjectHideFlags: 0

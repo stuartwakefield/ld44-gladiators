@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class StartScreen : MonoBehaviour
 {
+    public PlayerInfoManager manager;
+
     public void OnStart()
     {
-        Debug.Log("Starting new game");
+        manager.OnStart();
         SceneManager.LoadScene("Arena", LoadSceneMode.Single);
     }
 }
