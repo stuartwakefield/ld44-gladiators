@@ -10,6 +10,8 @@ public class Damage : MonoBehaviour
     public Animator animator;
     public GameObject target;
     public Rigidbody2D body;
+    public AudioSource soundDeath;
+    public AudioSource soundHurt;
 
     public float health = 100.0f;
     public int team = 0;
@@ -37,11 +39,16 @@ public class Damage : MonoBehaviour
             {
                 dead = true;
                 animator.SetBool("Dead", true);
+                soundDeath.Play();
                 Destroy(target);
                 if (onDead != null)
                 {
                     onDead.Invoke();
                 }
+            }
+            else
+            {
+                soundHurt.Play();
             }
         }
     }
