@@ -6,17 +6,17 @@ public class PlayerInfo
 {
     private static float START_VALUE = 100.0f;
 
-    private static float DAMAGE_TAKEN_BONUS = 100.0f;
-    private static float DAMAGE_TAKEN_PER = 100.0f;
+    private static float DAMAGE_TAKEN_BONUS = 20.0f;
+    private static float DAMAGE_TAKEN_PER = 10.0f;
 
-    private static float DAMAGE_GIVEN_BONUS = 200.0f;
-    private static float DAMAGE_GIVEN_PER = 100.0f;
+    private static float DAMAGE_GIVEN_BONUS = 20.0f;
+    private static float DAMAGE_GIVEN_PER = 10.0f;
 
-    private static float WEAPON_PICKUP_BONUS = 100.0f;
-    private static float WEAPON_PICKUP_PER = 10.0f;
+    private static float WEAPON_PICKUP_BONUS = 10.0f;
+    private static float WEAPON_PICKUP_PER = 1.0f;
 
-    private static float SURVIVE_TIME_BONUS = 1000.0f;
-    private static float SURVIVE_TIME_PER = 60.0f;
+    private static float SURVIVE_TIME_BONUS = 10.0f;
+    private static float SURVIVE_TIME_PER = 10.0f;
 
     private static float VICTORY_BONUS = 100.0f;
 

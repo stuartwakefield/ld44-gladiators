@@ -7,6 +7,7 @@ public class BattleScene : MonoBehaviour
 {
     public Animator animator;
     public PlayerInfoManager manager;
+    public LevelManager levelManager;
     public float wait = 5.0f;
 
     private float start = 0.0f;
@@ -16,6 +17,7 @@ public class BattleScene : MonoBehaviour
     public void Start()
     {
         manager.OnBattleStart();
+        levelManager.LoadLevel(Time.time);
     }
 
     public void OnDeath()

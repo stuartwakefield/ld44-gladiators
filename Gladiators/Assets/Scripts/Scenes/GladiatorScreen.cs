@@ -48,8 +48,6 @@ public class GladiatorScreen : MonoBehaviour
         levelOutput.text = level;
         battlesOutput.text = PlayerInfoContainer.Info.GetBattleCount().ToString();
         survivalTimeOutput.text = Mathf.Floor(PlayerInfoContainer.Info.GetSurvivalTime()).ToString();
-        damageDealtOutput.text = Mathf.Floor(PlayerInfoContainer.Info.GetDamageDealt()).ToString();
-        damageTakenOutput.text = Mathf.Floor(PlayerInfoContainer.Info.GetDamageTaken()).ToString();
         marketValueOutput.text = value.ToString();
     }
 

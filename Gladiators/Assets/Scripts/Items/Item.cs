@@ -6,7 +6,6 @@ public class Item : MonoBehaviour
 {
     public GameObject parent;
     public GameObject equipped;
-    public string trigger;
 
     public Equippable PickUp(GameObject target)
     {
