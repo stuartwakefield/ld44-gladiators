@@ -685,6 +685,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1826684419}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &607929896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 773113502737009119, guid: 3e032757028e1f846a3688d915c75bf1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1826684419}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607929890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &690031755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4908896720683023480, guid: 64b43f13881b19d459eed3f86c37d45f,
@@ -807,11 +819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 727867976}
     - target: {fileID: 2722510618892867757, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDeath
+      value: OnPlayerDead
       objectReference: {fileID: 0}
     - target: {fileID: 2722510618728106794, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
@@ -827,7 +839,7 @@ PrefabInstance:
         type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 519070510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e032757028e1f846a3688d915c75bf1, type: 3}
 --- !u!1 &727867970 stripped
@@ -842,6 +854,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 727867969}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &727867976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 773113502737009119, guid: 3e032757028e1f846a3688d915c75bf1,
+    type: 3}
+  m_PrefabInstance: {fileID: 727867969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727867970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &731786661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1037,6 +1061,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1227152022}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &772665040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 773113502737009119, guid: 3e032757028e1f846a3688d915c75bf1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1227152022}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772665035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &772665043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2722510618892867759, guid: 3e032757028e1f846a3688d915c75bf1,
@@ -1209,6 +1245,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2722510619776908846}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &894527109 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 773113502737009119, guid: 3e032757028e1f846a3688d915c75bf1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2722510619776908846}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894527104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &894527110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2722510618892867759, guid: 3e032757028e1f846a3688d915c75bf1,
@@ -1730,11 +1778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 772665040}
     - target: {fileID: 2722510618892867757, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDeath
+      value: OnPlayerDead
       objectReference: {fileID: 0}
     - target: {fileID: 2722510618728106794, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
@@ -1750,7 +1798,7 @@ PrefabInstance:
         type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 519070510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e032757028e1f846a3688d915c75bf1, type: 3}
 --- !u!1 &1278451878
@@ -3429,11 +3477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1804783242}
     - target: {fileID: 2722510618892867757, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDeath
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2722510618728106794, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
@@ -3449,7 +3497,7 @@ PrefabInstance:
         type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 519070510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e032757028e1f846a3688d915c75bf1, type: 3}
 --- !u!1 &1804783236 stripped
@@ -3464,6 +3512,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1804783235}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1804783242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 773113502737009119, guid: 3e032757028e1f846a3688d915c75bf1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1804783235}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804783236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1809885693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3580,11 +3640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1809885700}
     - target: {fileID: 2722510618892867757, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDeath
+      value: OnPlayerDead
       objectReference: {fileID: 0}
     - target: {fileID: 2722510618728106794, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
@@ -3600,7 +3660,7 @@ PrefabInstance:
         type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 519070510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e032757028e1f846a3688d915c75bf1, type: 3}
 --- !u!1 &1809885694 stripped
@@ -3615,6 +3675,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1809885693}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1809885700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 773113502737009119, guid: 3e032757028e1f846a3688d915c75bf1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809885693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809885694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d898082e93935a74f9630578f1af23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1815751967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3778,11 +3850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 607929896}
     - target: {fileID: 2722510618892867757, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDeath
+      value: OnPlayerDead
       objectReference: {fileID: 0}
     - target: {fileID: 2722510618728106794, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
@@ -3798,7 +3870,7 @@ PrefabInstance:
         type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 519070510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e032757028e1f846a3688d915c75bf1, type: 3}
 --- !u!1 &1839093215
@@ -4536,11 +4608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 894527109}
     - target: {fileID: 2722510618892867757, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
       propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDeath
+      value: OnPlayerDead
       objectReference: {fileID: 0}
     - target: {fileID: 2722510618728106794, guid: 3e032757028e1f846a3688d915c75bf1,
         type: 3}
@@ -4556,7 +4628,7 @@ PrefabInstance:
         type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 519070510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e032757028e1f846a3688d915c75bf1, type: 3}
 --- !u!1001 &4908896720245697350
